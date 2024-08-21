@@ -566,6 +566,7 @@ video {
   width: 100%;
   height: 85px;
   margin: 0 auto;
+  
 }
 .navbar .navbar__left {
   display: flex;

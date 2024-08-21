@@ -420,6 +420,7 @@
 }
 .navbar .navbar__center {
   display: flex;
+  
 }
 * {
   box-sizing: border-box;
@@ -567,6 +568,7 @@ video {
   width: 100%;
   height: 85px;
   margin: 0 auto;
+  
 }
 .navbar .navbar__left {
   display: flex;
@@ -1920,6 +1922,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  justify-content: end;
+  
 }
 .row {
   display: -ms-flexbox;
@@ -4288,6 +4292,7 @@ a.badge:hover {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  
 }
 .navbar-brand {
   display: inline-block;

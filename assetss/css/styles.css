@@ -366,6 +366,9 @@ body {
   color: #252525;
   text-shadow: none;
 }
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255);}
 
 .listar-page-header-content .listar-map-button-text span {
   position: relative;
@@ -427,7 +430,7 @@ div .footer-wave {
   left: 15px;
   width: calc(100% - 30px);
   height: calc(100% + 4px);
-  border-radius: 1000px;
+  border-radius: 800px;
   z-index: 10;
 }
 
@@ -545,7 +548,7 @@ div .footer-wave {
   height: calc(100% + 24px);
   top: -12px;
   left: 50%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .listar-feature-items {
@@ -587,7 +590,9 @@ div .footer-wave {
   height: 100%;
   top: 0;
   left: 0;
-  border: 11px solid #258bd5;
+  border:18px solid #fbfcfb;
+  border-left:18px solid #e31717 ;
+  border-right:18px solid #2a2f7d ;
   border-radius: 800px;
   left: -50%;
 }
@@ -622,8 +627,8 @@ div .footer-wave {
   line-height: 148px;
   border-radius: 500px;
   position: relative;
-  background-color: #fff;
-  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  box-shadow: 8px 8px 30px rgba(44, 41, 41, 0.837);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -716,7 +721,7 @@ div .footer-wave {
   padding: 10px 20px;
   display: inline-block;
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .listar-feature-item .listar-feature-item-title > span span {
@@ -732,7 +737,8 @@ div .footer-wave {
   top: -3px;
   left: -40px;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: #2a2f7d;
+  color: rgb(250, 250, 250);
 }
 
 .listar-feature-item .listar-feature-item-title span {
@@ -1517,11 +1523,11 @@ h2 {
     height: 100%;
     transition: 0.6s;
     z-index: 0;
-    background-color: #4f46e5;
+    background-color: #2a2f7d;
   }
 
   &:hover {
-    box-shadow: 0.063rem 0.063rem 1.25rem 0.375rem rgb(0 0 0 / 53%);
+    box-shadow: 0.063rem 0.063rem 1.25rem 0.375rem #f0f0f1;
   }
 
   &:nth-child(1)::before {
