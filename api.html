@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #2C327C;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #4A4FB3;
+        }
+        .response {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Test Fake API with Fetch</h1>
+
+    <button id="fetchData">Fetch Data from Fake API</button>
+
+    <div id="response" class="response"></div>
+
+    <script>
+        const button = document.getElementById('fetchData');
+        const responseDiv = document.getElementById('response');
+
+        button.addEventListener('click', () => {
+            const apiUrl = 'https://jsonplaceholder.typicode.com/posts/1'; // Using a fake API
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data); // Log the response to the console
+
+                    // Display the response data in the div
+                    responseDiv.innerHTML = `
+                        <h2>${data.title}</h2>
+                        <p>${data.body}</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    responseDiv.innerHTML = '<p>Error fetching data. Check the console for details.</p>';
+                });
+        });
+    </script>
+
+</body>
+</html>
+<!-- ---------------------  -->
+

@@ -547,7 +547,7 @@ video {
 }
 .header {
   position: fixed;
-  top: 0;
+  top: 1;
   left: 0;
   width: 100%;
   height: auto;
@@ -10227,7 +10227,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-heading::after {
-    content: "";
+    /* content: ""; */
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -10236,6 +10236,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #000;
     border-radius: 2px;
     transition: background 0.3s ease;
+   
 }
 
 /* .section-heading:hover {
@@ -10252,11 +10253,11 @@ h1, h2, h3, h4, h5, h6 {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Global styles */
-body {
-    /* font-family: 'Roboto', sans-serif; */
+/* body {
+    font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
     padding: 20px;
-}
+} */
 
 /* Arrow list styling */
 .arrow-list {
@@ -10271,6 +10272,7 @@ body {
     margin-bottom: 10px;
     font-size: 1.1em;
     color: #2c3e50;
+    
 }
 
 .arrow-list li::before {
@@ -10361,5 +10363,6 @@ h1 {
 .product-description:last-child {
     margin-bottom: 0;
 }
+
 
 
